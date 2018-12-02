@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render correctly the LoginPage component 1`] = `
+<div>
+  <h1>
+    We care about performance.
+  </h1>
+  <h2>
+    Do you?
+  </h2>
+  <p>
+    Login with
+  </p>
+  <button>
+    Google
+  </button>
+</div>
+`;

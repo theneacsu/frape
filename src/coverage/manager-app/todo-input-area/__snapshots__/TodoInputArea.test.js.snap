@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render correctly the TodoInputArea component 1`] = `
+<div>
+  <TodoForm
+    buttonText="Add todo"
+    placeholder="ex: Go for a run"
+  />
+</div>
+`;
