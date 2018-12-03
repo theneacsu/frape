@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render correctly the ManagerApp component 1`] = `
+<div>
+  <Provider
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+  >
+    <TodoApp />
+  </Provider>
+</div>
+`;

@@ -2,10 +2,14 @@
 
 exports[`Should render correctly the TodoForm component for adding a todo 1`] = `
 <div>
-  <form>
+  <form
+    onSubmit={[Function]}
+  >
     <input
+      onChange={[Function]}
       placeholder="ex: Go for a run"
       type="text"
+      value=""
     />
     <button>
       Add todo
@@ -16,9 +20,13 @@ exports[`Should render correctly the TodoForm component for adding a todo 1`] = 
 
 exports[`Should render correctly the TodoForm component for editing a todo 1`] = `
 <div>
-  <form>
+  <form
+    onSubmit={[Function]}
+  >
     <input
+      onChange={[Function]}
       type="text"
+      value=""
     />
     <button>
       Save

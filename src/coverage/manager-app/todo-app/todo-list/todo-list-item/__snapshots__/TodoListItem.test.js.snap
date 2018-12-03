@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render correctly the TodoListItem component 1`] = `
+<div>
+  <label>
+    <input
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span />
+  </label>
+  <button
+    onClick={[Function]}
+  >
+    Edit
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Remove
+  </button>
+</div>
+`;

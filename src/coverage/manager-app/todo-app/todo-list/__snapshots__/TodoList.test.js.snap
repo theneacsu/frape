@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render correctly the TodoList component when there are todos 1`] = `
+<div>
+  <p>
+    You have
+     
+    2
+     
+    todo(s) left.
+  </p>
+  <Connect(TodoListItem)
+    completed={false}
+    id="1"
+    key="1"
+    text="Go for a chest workout"
+  />
+  <Connect(TodoListItem)
+    completed={true}
+    id="2"
+    key="2"
+    text="Learn a new spanish verb"
+  />
+  <Connect(TodoListItem)
+    completed={false}
+    id="3"
+    key="3"
+    text="Talk with Jane about the trip"
+  />
+</div>
+`;
+
+exports[`Should render correctly the TodoList component where there are no todos 1`] = `
+<div>
+  <p>
+    No todos left.
+  </p>
+</div>
+`;

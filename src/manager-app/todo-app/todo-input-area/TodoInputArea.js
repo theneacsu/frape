@@ -1,10 +1,27 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import TodoForm from '../todo-form/TodoForm'
+import { addTodo } from '../../../actions/todo-app/todos'
 
-const TodoInputArea = () => (
-  <div>
-    <TodoForm placeholder="ex: Go for a run" buttonText="Add todo" />
-  </div>
-)
+export const TodoInputArea = props => {
+  const onSubmitAddTodo = todo => props.addTodo(todo.text)
 
-export default TodoInputArea
+  return (
+    <div>
+      <TodoForm
+        placeholder="ex: Go for a run"
+        buttonText="Add todo"
+        onSubmit={onSubmitAddTodo}
+      />
+    </div>
+  )
+}
+
+const mapDispatchToProps = dispatch => ({
+  addTodo: text => dispatch(addTodo(text))
+})
+
+export default connect(
+  undefined,
+  mapDispatchToProps
+)(TodoInputArea)

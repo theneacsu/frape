@@ -2,13 +2,19 @@
 
 exports[`Should render correctly the TodoFilterArea component 1`] = `
 <div>
+  <input
+    onChange={[Function]}
+    placeholder="search a todo"
+    type="text"
+  />
   <label
-    for="completed-todos"
+    htmlFor="completed-todos"
   >
     Hide completed
   </label>
   <input
     id="completed-todos"
+    onChange={[Function]}
     type="checkbox"
   />
 </div>
