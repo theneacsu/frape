@@ -1,15 +1,9 @@
 import React from 'react'
-import TodoApp from './todo-app/TodoApp'
-import { Provider } from 'react-redux'
-import configureStore from '../store/configureStore'
-
-const store = configureStore()
+import AppRouter from '../router/AppRouter'
 
 const ManagerApp = () => (
   <div>
-    <Provider store={store}>
-      <TodoApp />
-    </Provider>
+    <AppRouter />
   </div>
 )
 
