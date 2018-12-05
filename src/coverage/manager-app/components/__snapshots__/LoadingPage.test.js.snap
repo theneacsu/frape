@@ -2,7 +2,7 @@
 
 exports[`Should render correctly the LoadingPage component 1`] = `
 <div
-  class="lds-heart"
+  className="lds-heart"
 >
   <div />
 </div>
