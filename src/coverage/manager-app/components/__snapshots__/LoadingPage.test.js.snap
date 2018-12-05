@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render correctly the LoadingPage component 1`] = `
+<div
+  class="lds-heart"
+>
+  <div />
+</div>
+`;

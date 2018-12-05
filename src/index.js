@@ -7,6 +7,15 @@ import configureStore from './store/configureStore'
 import { firebase } from './firebase/firebase'
 import { history } from './router/AppRouter'
 import { login, logout } from './actions/auth/auth'
+import { startSetTodos } from './actions/todo-app/todos'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faTrashAlt, faPencilAlt } from '@fortawesome/free-solid-svg-icons'
+import LoadingPage from './manager-app/components/LoadingPage'
+
+import 'normalize.css/normalize.css'
+import './styles/style.scss'
+
+library.add(faTrashAlt, faPencilAlt)
 
 const store = configureStore()
 
@@ -25,15 +34,17 @@ const renderApp = () => {
   }
 }
 
-ReactDOM.render(<h1>Loading...</h1>, document.getElementById('root'))
+ReactDOM.render(<LoadingPage />, document.getElementById('root'))
 
 firebase.auth().onAuthStateChanged(user => {
   if (user) {
     store.dispatch(login(user))
-    renderApp()
-    if (history.location.pathname === '/') {
-      history.push('/dashboard')
-    }
+    store.dispatch(startSetTodos()).then(() => {
+      renderApp()
+      if (history.location.pathname === '/') {
+        history.push('/dashboard')
+      }
+    })
   } else {
     store.dispatch(logout())
     renderApp()

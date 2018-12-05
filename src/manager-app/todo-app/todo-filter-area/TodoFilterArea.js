@@ -23,18 +23,22 @@ export class TodoFilterArea extends Component {
 
   render() {
     return (
-      <div>
+      <div className="todo-filters-box">
         <input
+          className="todo-input"
           type="text"
-          placeholder="search a todo"
+          placeholder="search in todos"
           onChange={this.onChangeSearch}
         />
-        <label htmlFor="completed-todos">Hide completed</label>
+
         <input
           type="checkbox"
           id="completed-todos"
           onChange={this.onChangeCheckbox}
         />
+        <label htmlFor="completed-todos">
+          <span>Hide completed</span>
+        </label>
       </div>
     )
   }

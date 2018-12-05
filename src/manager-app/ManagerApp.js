@@ -2,7 +2,7 @@ import React from 'react'
 import AppRouter from '../router/AppRouter'
 
 const ManagerApp = () => (
-  <div>
+  <div className="manager-app-box">
     <AppRouter />
   </div>
 )

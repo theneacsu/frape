@@ -3,11 +3,16 @@ import { connect } from 'react-redux'
 import { startLogin } from '../../actions/auth/auth'
 
 export const LoginPage = props => (
-  <div>
-    <h1>We care about performance.</h1>
-    <h2>Do you?</h2>
-    <p>Login with</p>
-    <button onClick={props.startLogin}>Google</button>
+  <div className="box-layout">
+    <div className="box-layout__box">
+      <h1 className="box-layout__title">Holistic Integration</h1>
+      <h2 className="box-layout__subtitle">
+        Increase your performance, focus and productivity
+      </h2>
+      <button className="button" onClick={props.startLogin}>
+        Get started with Google
+      </button>
+    </div>
   </div>
 )
 

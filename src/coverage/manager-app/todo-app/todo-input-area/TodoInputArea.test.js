@@ -8,12 +8,12 @@ test('Should render correctly the TodoInputArea component', () => {
 })
 
 test('Should call the addTodo action when the form is submited with valid data', () => {
-  const addTodoSpy = jest.fn()
+  const startAddTodoSpy = jest.fn()
   const todo = {
     text: 'Drink a latte',
     completed: false
   }
-  const wrapper = shallow(<TodoInputArea addTodo={addTodoSpy} />)
+  const wrapper = shallow(<TodoInputArea startAddTodo={startAddTodoSpy} />)
   wrapper.find('TodoForm').prop('onSubmit')(todo)
-  expect(addTodoSpy).toHaveBeenLastCalledWith(todo.text)
+  expect(startAddTodoSpy).toHaveBeenLastCalledWith(todo.text)
 })

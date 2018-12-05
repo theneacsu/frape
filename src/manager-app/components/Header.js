@@ -4,10 +4,24 @@ import { NavLink } from 'react-router-dom'
 import { startLogout } from '../../actions/auth/auth'
 
 export const Header = props => (
-  <div>
-    <NavLink to="/dashboard">Dashboard</NavLink>
-    <NavLink to="/todos">Todo</NavLink>
-    <button onClick={props.startLogout}>Logout</button>
+  <div className="box-header">
+    <div className="header-container">
+      <nav className="box-header__nav">
+        <NavLink
+          className="menu-item"
+          to="/dashboard"
+          activeClassName="is-active"
+        >
+          Dashboard
+        </NavLink>
+        <NavLink className="menu-item" to="/todos" activeClassName="is-active">
+          Todos
+        </NavLink>
+      </nav>
+      <button className="logout-button" onClick={props.startLogout}>
+        Logout
+      </button>
+    </div>
   </div>
 )
 

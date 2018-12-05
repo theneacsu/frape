@@ -31,14 +31,15 @@ class TodoForm extends Component {
     return (
       <div>
         {this.state.error && <p>{this.state.error}</p>}
-        <form onSubmit={this.onSubmitHandler}>
+        <form onSubmit={this.onSubmitHandler} className="todo-form-box">
           <input
+            className="todo-input"
             type="text"
             placeholder={this.props.placeholder}
             value={this.state.todoText}
             onChange={this.onInputChange}
           />
-          <button>{this.props.buttonText}</button>
+          <button className="todo-form__button">{this.props.buttonText}</button>
         </form>
       </div>
     )

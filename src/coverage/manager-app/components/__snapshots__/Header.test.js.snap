@@ -1,25 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Render the Header component correctly 1`] = `
-<div>
-  <NavLink
-    activeClassName="active"
-    aria-current="page"
-    to="/dashboard"
+<div
+  className="box-header"
+>
+  <div
+    className="header-container"
   >
-    Dashboard
-  </NavLink>
-  <NavLink
-    activeClassName="active"
-    aria-current="page"
-    to="/todos"
-  >
-    Todo
-  </NavLink>
-  <button
-    onClick={[MockFunction]}
-  >
-    Logout
-  </button>
+    <nav
+      className="box-header__nav"
+    >
+      <NavLink
+        activeClassName="is-active"
+        aria-current="page"
+        className="menu-item"
+        to="/dashboard"
+      >
+        Dashboard
+      </NavLink>
+      <NavLink
+        activeClassName="is-active"
+        aria-current="page"
+        className="menu-item"
+        to="/todos"
+      >
+        Todos
+      </NavLink>
+    </nav>
+    <button
+      className="logout-button"
+      onClick={[MockFunction]}
+    >
+      Logout
+    </button>
+  </div>
 </div>
 `;

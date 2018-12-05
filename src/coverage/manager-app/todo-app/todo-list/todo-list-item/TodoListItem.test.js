@@ -2,21 +2,21 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import { TodoListItem } from '../../../../../manager-app/todo-app/todo-list/todo-list-item/TodoListItem'
 
-let todo, removeTodoSpy, editTodoSpy, toggleTodoSpy, wrapper
+let todo, startRemoveTodoSpy, startEditTodoSpy, startToggleTodoSpy, wrapper
 
 beforeEach(() => {
   todo = {
     text: 'go for a run',
     completed: true
   }
-  removeTodoSpy = jest.fn()
-  editTodoSpy = jest.fn()
-  toggleTodoSpy = jest.fn()
+  startRemoveTodoSpy = jest.fn()
+  startEditTodoSpy = jest.fn()
+  startToggleTodoSpy = jest.fn()
   wrapper = shallow(
     <TodoListItem
-      removeTodo={removeTodoSpy}
-      editTodo={editTodoSpy}
-      toggleTodo={toggleTodoSpy}
+      startRemoveTodo={startRemoveTodoSpy}
+      startEditTodo={startEditTodoSpy}
+      startToggleTodo={startToggleTodoSpy}
       todo={todo}
     />
   )
@@ -28,10 +28,10 @@ test('Should render correctly the TodoListItem component', () => {
 
 test('Should remove the todo', () => {
   wrapper
-    .find('button')
+    .find('FontAwesomeIcon')
     .at(1)
-    .simulate('click')
-  expect(removeTodoSpy).toHaveBeenLastCalledWith(wrapper.prop('id'))
+    .prop('onClick')()
+  expect(startRemoveTodoSpy).toHaveBeenLastCalledWith(wrapper.prop('id'))
 })
 
 test('Should toggle the todo completed status', () => {
@@ -39,15 +39,15 @@ test('Should toggle the todo completed status', () => {
     .find('input')
     .at(0)
     .simulate('change')
-  expect(toggleTodoSpy).toHaveBeenLastCalledWith(wrapper.prop('id'))
+  expect(startToggleTodoSpy).toHaveBeenLastCalledWith(wrapper.prop('id'))
 })
 
 test('Should edit the todo', () => {
   wrapper
-    .find('button')
+    .find('FontAwesomeIcon')
     .at(0)
-    .simulate('click')
+    .prop('onClick')()
   expect(wrapper.state('editMode')).toBe(true)
   wrapper.find('TodoForm').prop('onSubmit')(todo)
-  expect(editTodoSpy).toHaveBeenLastCalledWith(wrapper.prop('id'), todo)
+  expect(startEditTodoSpy).toHaveBeenLastCalledWith(wrapper.prop('id'), todo)
 })

@@ -1,9 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render correctly the DashboardManager component 1`] = `
-<div>
+<div
+  className="dashboard-box"
+>
   <h1>
-    Welcome, 
     Bradley Cooper
   </h1>
   <img
@@ -12,8 +13,14 @@ exports[`Should render correctly the DashboardManager component 1`] = `
   />
   <p>
     You have 
-    3
-     todo(s) left.
+    <Link
+      replace={false}
+      to="/todos"
+    >
+      3
+       todo(s)
+    </Link>
+     left.
   </p>
 </div>
 `;

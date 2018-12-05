@@ -4,10 +4,12 @@ import TodoFilterArea from './todo-filter-area/TodoFilterArea'
 import TodoList from './todo-list/TodoList'
 
 const TodoApp = () => (
-  <div>
-    <TodoInputArea />
-    <TodoFilterArea />
-    <TodoList />
+  <div className="todo-box">
+    <div className="container">
+      <TodoInputArea />
+      <TodoFilterArea />
+      <TodoList />
+    </div>
   </div>
 )
 

@@ -1,13 +1,13 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import TodoForm from '../todo-form/TodoForm'
-import { addTodo } from '../../../actions/todo-app/todos'
+import { startAddTodo } from '../../../actions/todo-app/todos'
 
 export const TodoInputArea = props => {
-  const onSubmitAddTodo = todo => props.addTodo(todo.text)
+  const onSubmitAddTodo = todo => props.startAddTodo(todo.text)
 
   return (
-    <div>
+    <div className="todo-input-area-box">
       <TodoForm
         placeholder="ex: Go for a run"
         buttonText="Add todo"
@@ -18,7 +18,7 @@ export const TodoInputArea = props => {
 }
 
 const mapDispatchToProps = dispatch => ({
-  addTodo: text => dispatch(addTodo(text))
+  startAddTodo: text => dispatch(startAddTodo(text))
 })
 
 export default connect(
