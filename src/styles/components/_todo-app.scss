@@ -1,5 +1,6 @@
 .todo-box {
   background-color: #ffecb1;
-  min-height: calc(100vh - 45.6px);
   padding: $s-size $m-size;
+  display: flex;
+  flex: 1;
 }
