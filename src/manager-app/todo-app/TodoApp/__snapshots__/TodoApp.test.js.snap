@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render correctly the TodoApp component 1`] = `
+<div
+  className="div"
+>
+  <div
+    className="container"
+  >
+    <Connect(TodoInputArea) />
+    <Connect(TodoFilterArea) />
+    <Connect(TodoList) />
+  </div>
+</div>
+`;

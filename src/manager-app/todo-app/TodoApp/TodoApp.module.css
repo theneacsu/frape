@@ -1,0 +1,27 @@
+:global(.input) {
+  outline: none;
+  border: none;
+  padding: 1.5rem;
+  margin-bottom: 0.4rem;
+  color: #47667c;
+  border-radius: 1rem;
+}
+
+:global(.input::placeholder) {
+  color: #ccc;
+}
+
+:global(.container) {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.div {
+  background-color: #f7ebc6;
+  padding: 1.4rem 1.6rem;
+  display: flex;
+  flex: 1;
+}

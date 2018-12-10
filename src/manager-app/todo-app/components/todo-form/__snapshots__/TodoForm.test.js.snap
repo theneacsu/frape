@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render correctly the TodoForm component for adding a todo 1`] = `
+<div>
+  <form
+    className="form"
+    onSubmit={[Function]}
+  >
+    <input
+      className="input input"
+      onChange={[Function]}
+      placeholder="ex: Go for a run"
+      type="text"
+      value=""
+    />
+    <button
+      className="button"
+    >
+      Add todo
+    </button>
+  </form>
+</div>
+`;
+
+exports[`Should render correctly the TodoForm component for editing a todo 1`] = `
+<div>
+  <form
+    className="form"
+    onSubmit={[Function]}
+  >
+    <input
+      className="input input"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <button
+      className="button"
+    >
+      Save
+    </button>
+  </form>
+</div>
+`;

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render correctly the footer component 1`] = `
+<div
+  className="div"
+>
+  Made with
+   
+  <img
+    alt="heart icon"
+    className="icon"
+    src="images/like.png"
+  />
+   and
+   
+  <img
+    alt="coffee icon"
+    className="icon"
+    src="images/coffee.png"
+  />
+   by Neacsu Alexandru
+</div>
+`;

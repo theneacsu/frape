@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import * as serviceWorker from './serviceWorker'
-import ManagerApp from './manager-app/ManagerApp'
+import ManagerApp from './manager-app/ManagerApp/ManagerApp'
 import configureStore from './store/configureStore'
 import { firebase } from './firebase/firebase'
 import { history } from './router/AppRouter'
@@ -10,10 +10,8 @@ import { login, logout } from './actions/auth/auth'
 import { startSetTodos } from './actions/todo-app/todos'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faTrashAlt, faPencilAlt } from '@fortawesome/free-solid-svg-icons'
-import LoadingPage from './manager-app/components/LoadingPage'
-
+import Loading from './manager-app/components/Loading/Loading'
 import 'normalize.css/normalize.css'
-import './styles/style.scss'
 
 library.add(faTrashAlt, faPencilAlt)
 
@@ -34,7 +32,7 @@ const renderApp = () => {
   }
 }
 
-ReactDOM.render(<LoadingPage />, document.getElementById('root'))
+ReactDOM.render(<Loading />, document.getElementById('root'))
 
 firebase.auth().onAuthStateChanged(user => {
   if (user) {

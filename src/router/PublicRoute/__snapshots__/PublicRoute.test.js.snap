@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should redirect to Dashboard when the user is authenticated 1`] = `
+<Route
+  component={[Function]}
+  path="/dashboard"
+/>
+`;
+
+exports[`Should render correcyly the Login component when the user is not authenticated 1`] = `
+<Route
+  component={[Function]}
+  path="/dashboard"
+/>
+`;

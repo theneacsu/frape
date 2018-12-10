@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Should render correctly the ManagerApp component 1`] = `
-<div
-  className="manager-app-box"
->
-  <AppRouter />
-</div>
-`;

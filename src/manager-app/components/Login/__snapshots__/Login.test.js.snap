@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render correctly the Login component 1`] = `
+<div
+  className="wrapperDiv"
+>
+  <div
+    className="contentDiv"
+  >
+    <h1
+      className="h1"
+    >
+      Holistic Integration
+    </h1>
+    <h2
+      className="h2"
+    >
+      Increase your performance, focus and productivity
+    </h2>
+    <button
+      className="button"
+    >
+      Get started with Google
+    </button>
+  </div>
+</div>
+`;

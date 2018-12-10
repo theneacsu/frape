@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render correctly the TodoFilterArea component 1`] = `
+<div
+  className="div"
+>
+  <input
+    className="input"
+    onChange={[Function]}
+    placeholder="Search todos"
+    type="text"
+  />
+  <input
+    className="checkbox"
+    id="completed-todos"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <label
+    htmlFor="completed-todos"
+  >
+    <span
+      className="span"
+    >
+      Hide completed
+    </span>
+  </label>
+</div>
+`;

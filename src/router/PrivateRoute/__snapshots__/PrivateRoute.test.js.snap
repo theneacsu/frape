@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should redirect to Login root page when the user is not authenticated 1`] = `
+<Route
+  component={[Function]}
+  path="/dashboard"
+/>
+`;
+
+exports[`Should render correctly the PrivateRoute when the user is authenticated 1`] = `
+<Route
+  component={[Function]}
+  path="/dashboard"
+/>
+`;

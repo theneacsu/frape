@@ -1,19 +1,19 @@
 import React from 'react'
 import { Router, Switch } from 'react-router-dom'
 import createHistory from 'history/createBrowserHistory'
-import PrivateRoute from './PrivateRoute'
-import PublicRoute from './PublicRoute'
-import LoginPage from '../manager-app/components/LoginPage'
-import DashboardManager from '../manager-app/components/DashboardManager'
-import TodoApp from '../manager-app/todo-app/TodoApp'
+import PrivateRoute from './PrivateRoute/PrivateRoute'
+import PublicRoute from './PublicRoute/PublicRoute'
+import Login from '../manager-app/components/Login/Login'
+import Dashboard from '../manager-app/components/Dashboard/Dashboard'
+import TodoApp from '../manager-app/todo-app/TodoApp/TodoApp'
 
 export const history = createHistory()
 
 const AppRouter = () => (
   <Router history={history}>
     <Switch>
-      <PublicRoute path="/" component={LoginPage} exact />
-      <PrivateRoute path="/dashboard" component={DashboardManager} />
+      <PublicRoute path="/" component={Login} exact />
+      <PrivateRoute path="/dashboard" component={Dashboard} />
       <PrivateRoute path="/todos" component={TodoApp} />
     </Switch>
   </Router>

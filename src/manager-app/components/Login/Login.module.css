@@ -1,0 +1,40 @@
+.wrapperDiv {
+  background: url('/images/main.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.contentDiv {
+  text-align: center;
+  padding: 3rem;
+  margin: 7rem 5rem 0;
+  letter-spacing: 0.1rem;
+  width: 320px;
+}
+
+.h1 {
+  margin: 0 0 6rem 0;
+  line-height: 1;
+  letter-spacing: 0.2rem;
+}
+
+.h2 {
+  margin: 0 0 5rem 0;
+}
+
+.button {
+  background: #dd4b39;
+  color: white;
+  border: none;
+  padding: 1.6rem;
+  border-radius: 5rem;
+  font-size: 1.6rem;
+  outline: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}

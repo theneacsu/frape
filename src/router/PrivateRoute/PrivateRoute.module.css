@@ -1,0 +1,17 @@
+.div {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  flex: 1;
+  min-height: 100%;
+}
+
+.componentDiv {
+  flex-grow: 1;
+  flex-basis: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  align-items: stretch;
+}

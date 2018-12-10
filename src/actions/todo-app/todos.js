@@ -39,14 +39,17 @@ const startAddTodo = text => {
     return database
       .ref(`users/${uid}/todos`)
       .push(todo)
-      .then(ref =>
+      .then(ref => {
         dispatch(
           addTodo({
             ...todo,
             id: ref.key
           })
         )
-      )
+        return database
+          .ref(`users/${uid}/email`)
+          .set(`${getState().auth.email}`)
+      })
   }
 }
 

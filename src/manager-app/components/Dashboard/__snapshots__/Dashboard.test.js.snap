@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render correctly the Dashboard component 1`] = `
+<div
+  className="div"
+>
+  <h1
+    className="h1"
+  >
+    Bradley Cooper
+  </h1>
+  <img
+    alt="User profile phote"
+    className="img"
+    src="https://lh4.googleusercontent.com/-3HA5dfxwrYU/AAAAAAAAAAI/AAAAAAAAEJ4/q6fYoZQpeEY/photo.jpg"
+  />
+  <p
+    className="p"
+  >
+    You have
+     
+    <Link
+      className="a"
+      replace={false}
+      to="/todos"
+    >
+      3
+       todo(s)
+    </Link>
+     
+    left.
+  </p>
+</div>
+`;

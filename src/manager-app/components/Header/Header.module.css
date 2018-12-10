@@ -1,0 +1,53 @@
+.wrapperDiv {
+  text-align: center;
+  margin: 0;
+  background-color: #4cb69f;
+}
+
+.containerDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  padding: 1.3rem 2rem;
+  margin: 0;
+}
+
+.menuItem {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.12rem;
+  font-weight: bold;
+}
+
+.button {
+  border: none;
+  outline: none;
+  background-color: #4cb69f;
+  font-weight: bold;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.button:hover,
+.menuItem:hover {
+  cursor: pointer;
+}
+
+.active {
+  color: #4cb69f;
+  background-color: white;
+}
+
+@media (min-width: 600px) {
+  .containerDiv {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+  }
+}

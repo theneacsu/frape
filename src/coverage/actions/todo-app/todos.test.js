@@ -15,7 +15,8 @@ import {
 
 const createMockStore = configureMockStore([thunk])
 const uid = '6969'
-const defaultAuthState = { auth: { uid } }
+const email = 'test@gmail.com'
+const defaultAuthState = { auth: { uid, email } }
 
 let id
 
@@ -33,6 +34,9 @@ beforeEach(done => {
   database
     .ref(`users/${uid}/todos`)
     .set(todoData)
+    .then(() => {
+      return database.ref(`users/${uid}/email`).set(email)
+    })
     .then(() => done())
 })
 
@@ -83,6 +87,8 @@ test('Should add a todo to database', done => {
 
   const todoText = 'Eat some mandarines'
 
+  let todoId
+
   store
     .dispatch(startAddTodo(todoText))
     .then(() => {
@@ -96,12 +102,13 @@ test('Should add a todo to database', done => {
         }
       })
 
-      return database
-        .ref(`users/${uid}/todos/${actions[0].todo.id}`)
-        .once('value')
+      todoId = actions[0].todo.id
+
+      return database.ref(`users/${uid}`).once('value')
     })
     .then(snapshot => {
-      expect(snapshot.val()).toEqual({
+      expect(snapshot.val().email).toBe(email)
+      expect(snapshot.val().todos[todoId]).toEqual({
         text: todoText,
         completed: false
       })

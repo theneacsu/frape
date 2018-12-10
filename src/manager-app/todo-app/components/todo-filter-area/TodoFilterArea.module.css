@@ -1,0 +1,49 @@
+.div {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox {
+  margin-top: 1rem;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox + label:before {
+  content: '\2714';
+  border: 0.1em solid #4cb69f;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 0.2em;
+  vertical-align: bottom;
+  color: transparent;
+}
+
+.checkbox + label:active:before {
+  transform: scale(0);
+}
+.checkbox:checked + label:before {
+  background-color: #4cb69f;
+  border-color: #4cb69f;
+  color: #fff;
+}
+
+.checkbox + label {
+  display: block;
+  margin: 2rem 2rem 0 0;
+  cursor: pointer;
+}
+
+.checkbox {
+  margin: 0 0 2rem 3rem;
+}
+
+.span {
+  margin: 1rem;
+}

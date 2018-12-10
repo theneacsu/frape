@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  margin: 0;
+  background-color: #dddcd8;
+}
+
+body {
+  color: #47667c;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+
+.div {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}

@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render the Header component correctly 1`] = `
+<div
+  className="wrapperDiv"
+>
+  <div
+    className="containerDiv"
+  >
+    <nav
+      className="nav"
+    >
+      <NavLink
+        activeClassName="active"
+        aria-current="page"
+        className="menuItem"
+        to="/dashboard"
+      >
+        Dashboard
+      </NavLink>
+      <NavLink
+        activeClassName="active"
+        aria-current="page"
+        className="menuItem"
+        to="/todos"
+      >
+        Todos
+      </NavLink>
+    </nav>
+    <button
+      className="button"
+      onClick={[MockFunction]}
+    >
+      Logout
+    </button>
+  </div>
+</div>
+`;
