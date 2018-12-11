@@ -26,6 +26,14 @@ exports[`Render the Header component correctly 1`] = `
       >
         Todos
       </NavLink>
+      <NavLink
+        activeClassName="active"
+        aria-current="page"
+        className="menuItem"
+        to="/notes"
+      >
+        Notes
+      </NavLink>
     </nav>
     <button
       className="button"

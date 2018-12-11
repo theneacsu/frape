@@ -22,6 +22,13 @@ export const Header = props => (
         >
           Todos
         </NavLink>
+        <NavLink
+          className={styles.menuItem}
+          to="/notes"
+          activeClassName={styles.active}
+        >
+          Notes
+        </NavLink>
       </nav>
       <button className={styles.button} onClick={props.startLogout}>
         Logout
