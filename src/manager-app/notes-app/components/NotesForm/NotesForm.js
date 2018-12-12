@@ -48,7 +48,6 @@ class NotesForm extends Component {
               placeholder={this.props.titlePlaceholder}
               value={this.state.title}
               onChange={this.onInputChange}
-              autoFocus
             />
             <textarea
               className={styles.textarea}

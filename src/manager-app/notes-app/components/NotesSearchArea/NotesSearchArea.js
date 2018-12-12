@@ -9,7 +9,6 @@ const NotesSearchArea = props => (
       className={['input', styles.input].join(' ')}
       type="text"
       placeholder="Search in notes"
-      autoFocus
       value={props.searchTerm}
       onChange={e => props.setSearchText(e.target.value)}
     />

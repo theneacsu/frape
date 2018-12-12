@@ -25,7 +25,7 @@
   width: 100%;
   display: block;
   resize: none;
-  height: 40rem;
+  height: 30rem;
 }
 
 .textarea::placeholder {
