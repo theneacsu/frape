@@ -1,9 +1,11 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import NotesListItem from '../NotesListItem/NotesListItem'
+import { getVisibleNotes } from '../../../../selectors/notes-app/notes'
+import styles from './NotesList.module.css'
 
 const NotesList = props => (
-  <div>
+  <div className={styles.div}>
     {props.notes.length === 0 ? (
       <p>No notes. Get started by creating one.</p>
     ) : (
@@ -13,7 +15,7 @@ const NotesList = props => (
 )
 
 const mapStateToProps = state => ({
-  notes: state.notes
+  notes: getVisibleNotes(state.notes, state.notesFilters)
 })
 
 export default connect(mapStateToProps)(NotesList)

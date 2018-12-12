@@ -1,0 +1,27 @@
+.wrapperDiv {
+  padding: 2rem;
+  background-color: rgb(250, 250, 190);
+  flex: 1;
+}
+
+.button {
+  border: none;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background-color: #aa76f8;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.div {
+  margin: 2rem auto;
+  width: 100%;
+}
+
+@media (min-width: 450px) {
+  .div {
+    display: flex;
+  }
+}

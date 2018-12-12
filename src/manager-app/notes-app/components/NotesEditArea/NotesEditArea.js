@@ -1,19 +1,23 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import NotesForm from '../NotesForm/NotesForm'
-import { editNote, removeNote } from '../../../../actions/notes-app/notes'
+import {
+  startEditNote,
+  startRemoveNote
+} from '../../../../actions/notes-app/notes'
+import styles from './NotesEditArea.module.css'
 
 const NotesEditArea = props => (
-  <div>
+  <div className={styles.div}>
     <NotesForm
       purpose="edit"
       note={props.note}
       onSubmit={note => {
-        props.editNote(props.note.id, note)
+        props.startEditNote(props.note.id, note)
         props.history.push('/notes')
       }}
       onRemove={() => {
-        props.removeNote(props.note.id)
+        props.startRemoveNote(props.note.id)
         props.history.push('/notes')
       }}
     />
@@ -25,8 +29,8 @@ const mapStateToProps = (state, props) => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-  editNote: (id, updates) => dispatch(editNote(id, updates)),
-  removeNote: id => dispatch(removeNote(id))
+  startEditNote: (id, updates) => dispatch(startEditNote(id, updates)),
+  startRemoveNote: id => dispatch(startRemoveNote(id))
 })
 
 export default connect(

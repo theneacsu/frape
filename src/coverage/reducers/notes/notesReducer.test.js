@@ -73,3 +73,12 @@ test('Should not edit a note when the id is not valid', () => {
   const state = notesReducer(notes, action)
   expect(state).toEqual(notes)
 })
+
+test('Should set the notes', () => {
+  const action = {
+    type: 'SET_NOTES',
+    notes: [{ title: 'abc', body: 'def', id: '23s' }]
+  }
+  const state = notesReducer(notes, action)
+  expect(state).toEqual(action.notes)
+})

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import styles from './NotesForm.module.css'
 
 class NotesForm extends Component {
   state = {
@@ -38,29 +39,48 @@ class NotesForm extends Component {
 
   render() {
     return (
-      <div>
-        <form onSubmit={this.onFormSubmit}>
-          <input
-            type="text"
-            placeholder="ex: Pizza is the devil!"
-            value={this.state.title}
-            onChange={this.onInputChange}
-            autoFocus
-          />
-          <textarea
-            placeholder="Try to stay away from junk food and try to cook most of your meals"
-            value={this.state.body}
-            onChange={this.onTextareaChange}
-          />
-          {this.props.purpose === 'edit' ? (
-            <button type="submit">Save</button>
-          ) : (
-            <button type="submit">Add</button>
+      <div className={styles.wrapperDiv}>
+        <div className="container">
+          <form className={styles.form} onSubmit={this.onFormSubmit}>
+            <input
+              className="input"
+              type="text"
+              placeholder={this.props.titlePlaceholder}
+              value={this.state.title}
+              onChange={this.onInputChange}
+              autoFocus
+            />
+            <textarea
+              className={styles.textarea}
+              placeholder={this.props.bodyPlaceholder}
+              value={this.state.body}
+              onChange={this.onTextareaChange}
+            />
+            {this.props.purpose === 'edit' ? (
+              <button
+                type="submit"
+                className={[styles.button, styles.save].join(' ')}
+              >
+                Save
+              </button>
+            ) : (
+              <button
+                type="submit"
+                className={[styles.button, styles.save].join(' ')}
+              >
+                Add
+              </button>
+            )}
+          </form>
+          {this.props.purpose === 'edit' && (
+            <button
+              onClick={this.onButtonRemove}
+              className={[styles.button, styles.delete].join(' ')}
+            >
+              Delete
+            </button>
           )}
-        </form>
-        {this.props.purpose === 'edit' && (
-          <button onClick={this.onButtonRemove}>Delete</button>
-        )}
+        </div>
       </div>
     )
   }

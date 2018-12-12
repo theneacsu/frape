@@ -17,7 +17,13 @@ export const Dashboard = props => (
       <Link to="/todos" className={styles.a}>
         {props.todosLeft} todo(s)
       </Link>{' '}
-      left.
+      left
+    </p>
+    <p className={styles.p}>
+      Read your{' '}
+      <Link to="/notes" className={styles.a}>
+        notes
+      </Link>
     </p>
   </div>
 )

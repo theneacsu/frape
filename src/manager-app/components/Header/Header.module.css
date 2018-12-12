@@ -14,8 +14,9 @@
 }
 
 .nav a {
-  padding: 1.3rem 2rem;
+  padding: 1.3rem 1rem;
   margin: 0;
+  font-size: 1.3rem;
 }
 
 .menuItem {
@@ -32,6 +33,7 @@
   font-weight: bold;
   color: white;
   padding: 1rem 2rem;
+  font-size: 1.3rem;
 }
 
 .button:hover,
@@ -44,10 +46,28 @@
   background-color: white;
 }
 
+@media (min-width: 360px) {
+  .nav a,
+  .button {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 411px) {
+  .nav a,
+  .button {
+    font-size: 1.7rem;
+  }
+}
+
 @media (min-width: 600px) {
   .containerDiv {
     width: 80%;
     max-width: 800px;
     margin: auto;
+  }
+
+  .nav a {
+    padding: 1.3rem 2rem;
   }
 }

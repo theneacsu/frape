@@ -2,14 +2,17 @@ import React from 'react'
 import { connect } from 'react-redux'
 import '../NotesForm/NotesForm'
 import NotesForm from '../NotesForm/NotesForm'
-import { addNote } from '../../../../actions/notes-app/notes'
+import { startAddNote } from '../../../../actions/notes-app/notes'
+import styles from './NotesInputArea.module.css'
 
 const NotesInputArea = props => (
-  <div>
+  <div className={styles.div}>
     <NotesForm
       purpose="add"
+      titlePlaceholder="ex: Eat healthier"
+      bodyPlaceholder="ex: Remove an unhealthy product evey month"
       onSubmit={note => {
-        props.addNote(note)
+        props.startAddNote(note)
         props.history.push('/notes')
       }}
     />
@@ -17,7 +20,7 @@ const NotesInputArea = props => (
 )
 
 const mapDispatchToProps = dispatch => ({
-  addNote: note => dispatch(addNote(note))
+  startAddNote: note => dispatch(startAddNote(note))
 })
 
 export default connect(

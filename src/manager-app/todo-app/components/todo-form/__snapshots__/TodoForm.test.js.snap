@@ -7,6 +7,7 @@ exports[`Should render correctly the TodoForm component for adding a todo 1`] = 
     onSubmit={[Function]}
   >
     <input
+      autoFocus={true}
       className="input input"
       onChange={[Function]}
       placeholder="ex: Go for a run"
@@ -29,6 +30,7 @@ exports[`Should render correctly the TodoForm component for editing a todo 1`] =
     onSubmit={[Function]}
   >
     <input
+      autoFocus={true}
       className="input input"
       onChange={[Function]}
       type="text"

@@ -36,6 +36,7 @@ class TodoForm extends Component {
           <input
             className={['input', styles.input].join(' ')}
             type="text"
+            autoFocus
             placeholder={this.props.placeholder}
             value={this.state.todoText}
             onChange={this.onInputChange}

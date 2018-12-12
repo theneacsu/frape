@@ -8,6 +8,7 @@ import { firebase } from './firebase/firebase'
 import { history } from './router/AppRouter'
 import { login, logout } from './actions/auth/auth'
 import { startSetTodos } from './actions/todo-app/todos'
+import { startSetNotes } from './actions/notes-app/notes'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faTrashAlt, faPencilAlt } from '@fortawesome/free-solid-svg-icons'
 import Loading from './manager-app/components/Loading/Loading'
@@ -37,6 +38,7 @@ ReactDOM.render(<Loading />, document.getElementById('root'))
 firebase.auth().onAuthStateChanged(user => {
   if (user) {
     store.dispatch(login(user))
+    store.dispatch(startSetNotes())
     store.dispatch(startSetTodos()).then(() => {
       renderApp()
       if (history.location.pathname === '/') {

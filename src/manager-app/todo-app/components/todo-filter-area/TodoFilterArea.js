@@ -28,7 +28,7 @@ export class TodoFilterArea extends Component {
         <input
           className="input"
           type="text"
-          placeholder="Search todos"
+          placeholder="Search in todos"
           onChange={this.onChangeSearch}
         />
 

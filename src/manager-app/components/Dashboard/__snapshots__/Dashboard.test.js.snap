@@ -28,7 +28,20 @@ exports[`Should render correctly the Dashboard component 1`] = `
        todo(s)
     </Link>
      
-    left.
+    left
+  </p>
+  <p
+    className="p"
+  >
+    Read your
+     
+    <Link
+      className="a"
+      replace={false}
+      to="/notes"
+    >
+      notes
+    </Link>
   </p>
 </div>
 `;

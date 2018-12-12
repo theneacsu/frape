@@ -20,3 +20,13 @@ body {
   flex-flow: column;
   min-height: 100vh;
 }
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+input,
+textarea {
+  outline: none;
+}
