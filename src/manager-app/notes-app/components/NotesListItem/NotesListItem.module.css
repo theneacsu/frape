@@ -1,6 +1,7 @@
 .div {
-  margin: 1.5rem 1.5rem 0 0;
-  max-width: 50%;
+  margin: 0 0 1.5rem 0;
+  width: 70%;
+  justify-content: center;
   padding: 0;
 }
 
@@ -11,28 +12,47 @@
 .h1 {
   margin: 0;
   border-top-left-radius: 1rem;
+  border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
   background-color: #aa76f8;
   padding: 1rem;
+  word-wrap: break-word;
 }
 
 .p {
   margin: 0;
   word-wrap: break-word;
+  font-size: 1.5rem;
   padding: 1rem;
   border: 1px solid #aa76f8;
   border-bottom-left-radius: 1.8rem;
   border-bottom-right-radius: 1.8rem;
 }
 
-@media (min-width: 450px) {
-  .h1 {
-    font-size: 2rem;
-  }
-
+@media (min-width: 355px) {
   .div {
-    max-width: 200px;
+    width: 45%;
+    margin-left: 0.6rem;
+    margin-right: 0.8rem;
+  }
+}
+
+@media (min-width: 450px) {
+  .div {
+    width: 45%;
+  }
+}
+
+@media (min-width: 600px) {
+  .h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 750px) {
+  .div {
+    width: 30.5%;
   }
 }

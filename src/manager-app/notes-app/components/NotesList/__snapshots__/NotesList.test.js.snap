@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render the NotesList component correctly with no notes provided 1`] = `
+<div
+  className="div"
+>
+  <p>
+    No notes. Get started by creating one.
+  </p>
+</div>
+`;
+
+exports[`Should render the NotesList component correctly with notes provided 1`] = `
+<div
+  className="div"
+>
+  <NotesListItem
+    body="Try to cook your own food"
+    id="1"
+    key="1"
+    title="Pizza is the devil"
+  />
+  <NotesListItem
+    body="Tea is always a good idea"
+    id="2"
+    key="2"
+    title="Drink more tea"
+  />
+  <NotesListItem
+    body="Learn a new thing every day"
+    id="3"
+    key="3"
+    title="Learn stuff"
+  />
+</div>
+`;

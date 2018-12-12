@@ -4,7 +4,7 @@ import styles from './NotesListItem.module.css'
 
 const NotesListItem = props => (
   <div className={styles.div}>
-    <div classname={styles.wrapperH1}>
+    <div>
       <Link to={`/notes/${props.id}`} className={styles.a}>
         <h1 className={styles.h1}>{props.title}</h1>
       </Link>

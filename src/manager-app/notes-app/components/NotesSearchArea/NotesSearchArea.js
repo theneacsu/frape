@@ -3,8 +3,8 @@ import { connect } from 'react-redux'
 import { setSearchText } from '../../../../actions/notes-app/filters'
 import styles from './NotesSearchArea.module.css'
 
-const NotesSearchArea = props => (
-  <div>
+export const NotesSearchArea = props => (
+  <div className={styles.div}>
     <input
       className={['input', styles.input].join(' ')}
       type="text"

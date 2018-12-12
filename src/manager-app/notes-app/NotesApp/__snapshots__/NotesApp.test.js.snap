@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render the NotesApp component correctly 1`] = `
+<div
+  className="wrapperDiv"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="div"
+    >
+      <button
+        className="button"
+        onClick={[Function]}
+      >
+        New Note
+      </button>
+      <Connect(NotesSearchArea) />
+    </div>
+    <Connect(NotesList) />
+  </div>
+</div>
+`;

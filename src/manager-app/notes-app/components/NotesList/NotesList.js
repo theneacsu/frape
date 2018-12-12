@@ -4,7 +4,7 @@ import NotesListItem from '../NotesListItem/NotesListItem'
 import { getVisibleNotes } from '../../../../selectors/notes-app/notes'
 import styles from './NotesList.module.css'
 
-const NotesList = props => (
+export const NotesList = props => (
   <div className={styles.div}>
     {props.notes.length === 0 ? (
       <p>No notes. Get started by creating one.</p>
