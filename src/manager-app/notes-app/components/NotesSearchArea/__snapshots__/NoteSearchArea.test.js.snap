@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render NoteSearchArea component correctly with empty searchTerm 1`] = `
-<div>
+<div
+  className="div"
+>
   <input
     className="input input"
     onChange={[Function]}
@@ -13,7 +15,9 @@ exports[`Should render NoteSearchArea component correctly with empty searchTerm 
 `;
 
 exports[`Should render NoteSearchArea component correctly with searchTerm provided 1`] = `
-<div>
+<div
+  className="div"
+>
   <input
     className="input input"
     onChange={[Function]}
