@@ -16,11 +16,17 @@ const AppRouter = () => (
   <Router history={history}>
     <Switch>
       <PublicRoute path="/" component={Login} exact />
-      <PrivateRoute path="/dashboard" component={Dashboard} />
+      <PrivateRoute path="/dashboard" component={Dashboard} exact />
       <PrivateRoute path="/todos" component={TodoApp} />
       <PrivateRoute path="/notes" component={NotesApp} exact />
       <PrivateRoute path="/notes/create" component={NotesInputArea} />
-      <PrivateRoute path="/notes/:id" component={NotesEditArea} />
+      <PrivateRoute path="/notes/:id" component={NotesEditArea} exact />
+      <PrivateRoute
+        component={() => {
+          history.push('/')
+          return <Dashboard />
+        }}
+      />
     </Switch>
   </Router>
 )
