@@ -32,6 +32,7 @@ export const Header = props => (
 
         <a
           target="_blank"
+          rel="noopener noreferrer"
           href="https://www.patreon.com/bePatron?u=15774331"
           data-patreon-widget-type="become-patron-button"
           className={[styles.menuItem, styles.donate].join(' ')}
