@@ -22,7 +22,6 @@
   margin-left: 3rem;
   display: inline-block;
   max-width: 50vw;
-  word-break: break-all;
   word-wrap: break-word;
 }
 .span:hover {
