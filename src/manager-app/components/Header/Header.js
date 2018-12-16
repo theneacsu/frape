@@ -29,6 +29,19 @@ export const Header = props => (
         >
           Notes
         </NavLink>
+
+        <a
+          target="_blank"
+          href="https://www.patreon.com/bePatron?u=15774331"
+          data-patreon-widget-type="become-patron-button"
+          className={[styles.menuItem, styles.donate].join(' ')}
+        >
+          Donate
+        </a>
+        <script
+          async
+          src="https://c6.patreon.com/becomePatronButton.bundle.js"
+        />
       </nav>
       <button className={styles.button} onClick={props.startLogout}>
         Logout
