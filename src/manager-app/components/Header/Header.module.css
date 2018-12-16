@@ -70,9 +70,12 @@
     width: 80%;
     max-width: 800px;
     margin: auto;
+    font-size: 1.7rem;
   }
 
-  .nav a {
-    padding: 1.3rem 2rem;
+  .nav a,
+  .button {
+    font-size: 1.7rem;
+    padding: 1.2rem 1.3rem;
   }
 }
