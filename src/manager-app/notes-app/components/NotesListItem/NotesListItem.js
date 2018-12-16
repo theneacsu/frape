@@ -9,7 +9,9 @@ const NotesListItem = props => (
         <h1 className={styles.h1}>{props.title}</h1>
       </Link>
     </div>
-    <p className={styles.p}>{props.body}</p>
+    <Link to={`/notes/${props.id}`} className={styles.a}>
+      <p className={styles.p}>{props.body}</p>
+    </Link>
   </div>
 )
 
