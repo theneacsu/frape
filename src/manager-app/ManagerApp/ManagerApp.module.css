@@ -30,3 +30,7 @@ input,
 textarea {
   outline: none;
 }
+
+:global(.sm-bm) {
+  margin-bottom: 2rem;
+}

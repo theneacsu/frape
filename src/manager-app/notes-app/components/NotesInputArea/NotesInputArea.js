@@ -5,7 +5,7 @@ import NotesForm from '../NotesForm/NotesForm'
 import { startAddNote } from '../../../../actions/notes-app/notes'
 import styles from './NotesInputArea.module.css'
 
-const NotesInputArea = props => (
+export const NotesInputArea = props => (
   <div className={styles.div}>
     <NotesForm
       purpose="add"

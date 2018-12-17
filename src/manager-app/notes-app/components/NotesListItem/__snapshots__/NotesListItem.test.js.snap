@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render the NotesListItem component correctly 1`] = `
+<div
+  className="div"
+>
+  <div>
+    <Link
+      className="a"
+      replace={false}
+      to="/notes/123abc"
+    >
+      <h1
+        className="h1"
+      />
+    </Link>
+  </div>
+  <Link
+    className="a"
+    replace={false}
+    to="/notes/123abc"
+  >
+    <p
+      className="p"
+    >
+      Buy food
+    </p>
+  </Link>
+</div>
+`;

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render the NotesInputArea component correctly 1`] = `
+<div
+  className="div"
+>
+  <NotesForm
+    bodyPlaceholder="ex: Remove an unhealthy product evey month"
+    onSubmit={[Function]}
+    purpose="add"
+    titlePlaceholder="ex: Eat healthier"
+  />
+</div>
+`;

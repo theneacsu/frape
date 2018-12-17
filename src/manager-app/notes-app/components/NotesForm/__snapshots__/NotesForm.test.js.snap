@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render the NotesForm component when adding a new note correctly 1`] = `
+<div
+  className="wrapperDiv"
+>
+  <div
+    className="container"
+  >
+    <form
+      className="form"
+      onSubmit={[Function]}
+    >
+      <input
+        className="input"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+      <textarea
+        className="textarea"
+        onChange={[Function]}
+        placeholder="a body"
+        value=""
+      />
+      <button
+        className="button save"
+        type="submit"
+      >
+        Add
+      </button>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`Should render the NotesForm component when editing a note correctly 1`] = `
+<div
+  className="wrapperDiv"
+>
+  <div
+    className="container"
+  >
+    <form
+      className="form"
+      onSubmit={[Function]}
+    >
+      <input
+        className="input"
+        onChange={[Function]}
+        type="text"
+      />
+      <textarea
+        className="textarea"
+        onChange={[Function]}
+        value="A lot of them"
+      />
+      <button
+        className="button save"
+        type="submit"
+      >
+        Save
+      </button>
+    </form>
+    <button
+      className="button delete"
+      onClick={[Function]}
+    >
+      Delete
+    </button>
+  </div>
+</div>
+`;

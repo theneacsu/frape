@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render the NotesEditArea component correctly 1`] = `
+<div
+  className="div"
+>
+  <NotesForm
+    note={
+      Object {
+        "body": "old music",
+        "id": "123abc",
+        "title": "I got my mind set on you",
+      }
+    }
+    onRemove={[Function]}
+    onSubmit={[Function]}
+    purpose="edit"
+  />
+</div>
+`;

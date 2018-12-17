@@ -34,6 +34,19 @@ exports[`Render the Header component correctly 1`] = `
       >
         Notes
       </NavLink>
+      <a
+        className="menuItem donate"
+        data-patreon-widget-type="become-patron-button"
+        href="https://www.patreon.com/bePatron?u=15774331"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Donate
+      </a>
+      <script
+        async={true}
+        src="https://c6.patreon.com/becomePatronButton.bundle.js"
+      />
     </nav>
     <button
       className="button"

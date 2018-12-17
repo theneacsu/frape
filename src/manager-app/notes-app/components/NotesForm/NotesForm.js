@@ -49,6 +49,7 @@ class NotesForm extends Component {
               value={this.state.title}
               onChange={this.onInputChange}
             />
+            {this.state.error && <p className="error">{this.state.error}</p>}
             <textarea
               className={styles.textarea}
               placeholder={this.props.bodyPlaceholder}

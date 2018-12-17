@@ -31,7 +31,6 @@ class TodoForm extends Component {
   render() {
     return (
       <div>
-        {this.state.error && <p>{this.state.error}</p>}
         <form onSubmit={this.onSubmitHandler} className={styles.form}>
           <input
             className={['input', styles.input].join(' ')}
@@ -42,6 +41,7 @@ class TodoForm extends Component {
           />
           <button className={styles.button}>{this.props.buttonText}</button>
         </form>
+        {this.state.error && <p className="error sm-bm">{this.state.error}</p>}
       </div>
     )
   }
